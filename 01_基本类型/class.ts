@@ -41,3 +41,26 @@ class Cat extends Animal {
 
 const maomao = new Cat('maomao');
 console.log(maomao.run())
+
+interface Radio {
+  switchRadio(): void
+}
+interface Battery {
+  checkBetteryStatus()
+}
+interface RadioWithBattery extends Radio {
+  checkBetteryStatus()
+}
+class Car implements Radio {
+  switchRadio() {
+    
+  }
+}
+class Cellphone implements RadioWithBattery {
+  switchRadio() {
+
+  }
+  checkBetteryStatus() {
+
+  }
+}
